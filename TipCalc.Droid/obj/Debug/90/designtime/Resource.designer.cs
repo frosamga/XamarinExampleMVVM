@@ -106,13 +106,16 @@ namespace TipCalc.UI.Droid
 			public const int Camera = 2130903041;
 			
 			// aapt resource value: 0x7F030002
-			public const int MvvmCrossTagId = 2130903042;
+			public const int linearLayout1 = 2130903042;
 			
 			// aapt resource value: 0x7F030003
-			public const int MvxBindingTagUnique = 2130903043;
+			public const int MvvmCrossTagId = 2130903043;
 			
 			// aapt resource value: 0x7F030004
-			public const int Task = 2130903044;
+			public const int MvxBindingTagUnique = 2130903044;
+			
+			// aapt resource value: 0x7F030005
+			public const int Task = 2130903045;
 			
 			static Id()
 			{
@@ -147,10 +150,16 @@ namespace TipCalc.UI.Droid
 		{
 			
 			// aapt resource value: 0x7F050000
-			public const int ApplicationName = 2131034112;
+			public const int Accept = 2131034112;
 			
 			// aapt resource value: 0x7F050001
-			public const int Hello = 2131034113;
+			public const int ApplicationName = 2131034113;
+			
+			// aapt resource value: 0x7F050002
+			public const int Finish = 2131034114;
+			
+			// aapt resource value: 0x7F050003
+			public const int Hello = 2131034115;
 			
 			static String()
 			{

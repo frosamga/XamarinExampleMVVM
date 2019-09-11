@@ -67,6 +67,7 @@
                     android:layout_height="match_parent" 
                     android:layout_weight=".70"
                     android:textSize="20dp"
+                    android:background="@android:color/darker_gray"
                     android:textColor="@android:color/black"
                     local:MvxBind="Text CustomerName" /> 
             </LinearLayout>
@@ -89,6 +90,7 @@
                     android:layout_height="match_parent" 
                     android:layout_weight=".30"
                     android:textSize="20dp"
+                    android:background="@android:color/darker_gray"
                     android:textColor="@android:color/black"
                     local:MvxBind="Text SalesOrder" />
                 <TextView
@@ -103,8 +105,9 @@
                     android:text="66666"
                     android:layout_width="0dp" 
                     android:layout_height="match_parent" 
-                    android:layout_weight=".20"
+                    android:layout_weight=".25"
                     android:textSize="20dp"
+                    android:background="@android:color/darker_gray"
                     android:textColor="@android:color/black"
                     local:MvxBind="Text DN" />
             </LinearLayout>
@@ -128,8 +131,181 @@
                     android:layout_weight=".70"
                     android:textSize="20dp"
                     android:textColor="@android:color/black"
+                    android:background="@android:color/darker_gray"
                     local:MvxBind="Text Pallet" /> 
             </LinearLayout>
-        </LinearLayout>   
+
+            <EditText
+                android:text="No apilar mas de 5 alturas"
+                android:inputType="textMultiLine"
+                android:lines="8"
+                android:minLines="6"
+                android:gravity="top|left"
+                android:maxLines="10" 
+                android:background="@android:color/darker_gray"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" 
+                android:scrollbars="vertical"/>
+            <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">  
+                <!-->Le damos un porcentaje para que quede por columnas, quedara mejor<-->
+                <TextView
+                    android:text="Lot:"
+                    android:layout_width="0dp" 
+                    android:layout_height="match_parent" 
+                    android:layout_weight=".15"                    
+                    android:textSize="20dp"
+                    android:textColor="@android:color/black"/> 
+                <EditText
+                    android:text="1234"
+                    android:layout_width="0dp" 
+                    android:layout_height="match_parent" 
+                    android:layout_weight=".70"
+                    android:textSize="20dp"
+                    android:background="@android:color/transparent"
+                    android:textColor="@android:color/black"
+                    local:MvxBind="Lot" />  
+                <ImageButton
+                    android:id="@+id/Camera"
+                    android:layout_width="0dp" 
+                    android:layout_height="match_parent" 
+                    android:layout_weight=".20"
+                    android:src="@drawable/icon"/>
+            </LinearLayout>
+            <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">  
+                <!-->Le damos un porcentaje para que quede por columnas, quedara mejor<-->
+                <TextView
+                    android:text="Qty"
+                    android:layout_width="0dp" 
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_weight=".30"
+                    android:textSize="20dp"
+                    android:textColor="@android:color/black"/> 
+                <EditText
+                    android:text="-10"
+                    android:layout_width="0dp" 
+                    android:layout_height="match_parent" 
+                    android:layout_weight=".30"
+                    android:textSize="20dp"
+                    android:textColor="@android:color/black"/>
+                <TextView
+                    android:text="Box"
+                    android:layout_width="0dp" 
+                    android:layout_height="match_parent" 
+                    android:gravity="center_vertical"
+                    android:layout_weight=".15"
+                    android:textSize="20dp"
+                    android:textColor="@android:color/black"/> 
+                <EditText
+                    android:text="-120"
+                    android:layout_width="0dp" 
+                    android:layout_height="match_parent" 
+                    android:layout_weight=".25"
+                    android:textSize="20dp"
+                    android:background="@android:color/darker_gray"
+                    android:textColor="@android:color/black"
+                    local:MvxBind="Text DN" />
+                <TextView
+                    android:text="Box"
+                    android:layout_width="0dp" 
+                    android:layout_height="match_parent" 
+                    android:gravity="center_vertical"
+                    android:layout_weight=".15"
+                    android:textSize="20dp"
+                    android:textColor="@android:color/black"/>
+            </LinearLayout>
+            <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">  
+                <!-->Le damos un porcentaje para que quede por columnas, quedara mejor<-->
+                <TextView
+                    android:text="Pend. Qty"
+                    android:layout_width="0dp" 
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_weight=".30"
+                    android:textSize="20dp"
+                    android:textColor="@android:color/black"/> 
+                <EditText
+                    android:text="-10"
+                    android:layout_width="0dp" 
+                    android:layout_height="match_parent" 
+                    android:layout_weight=".30"
+                    android:textSize="20dp"
+                    android:background="@android:color/darker_gray"
+                    android:textColor="@android:color/black"/>
+                <TextView
+                    android:text="Box"
+                    android:layout_width="0dp" 
+                    android:layout_height="match_parent" 
+                    android:gravity="center_vertical"
+                    android:layout_weight=".15"
+                    android:textSize="20dp"
+                    android:textColor="@android:color/black"/> 
+                <Button
+                    android:id="@+id/Back"
+                    android:text="Back" 
+                    android:visibility="invisible"
+                    android:layout_width="0dp" 
+                    android:layout_height="wrap_content" 
+                    android:layout_weight=".40" />
+            </LinearLayout>
+            <EditText
+                android:text="10136 - BARQUETA VERDURAS"
+                android:inputType="textMultiLine"
+                android:lines="2"
+                android:minLines="1"
+                android:gravity="top|left"
+                android:maxLines="10" 
+                android:background="@android:color/darker_gray"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" 
+                android:scrollbars="vertical"/> 
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:padding="6dp"
+                android:weightSum="2">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/Accept"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:layout_weight="1" 
+                    />
+            </LinearLayout> 
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:padding="6dp"
+                android:weightSum="2">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/Finish"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:layout_weight="1" />
+            </LinearLayout> 
+        </LinearLayout>
+        
     </ScrollView>
 </RelativeLayout>

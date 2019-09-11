@@ -21,6 +21,7 @@ namespace TipCalc.Core.ViewModels
             CustomerName = "Enrique Tomas S.L";
             SalesOrder = IdPickingSheet.ToString();
             Pallet = "EPALET STANDARD";
+			Lot = "1234";
         }
 
         #region PickingSheet
@@ -74,7 +75,48 @@ namespace TipCalc.Core.ViewModels
             set {_pallet = value; }
         }
         
+		private string _lot = string.Empty;
+        public string Lot
+        {
+            get { return _lot; }
+            set {_lot = value; }
+        }
+		
+		 /*
+		 #region Command Aceptar
 
+        IMvxAsyncCommand _aceptarCommand;
+
+        public IMvxAsyncCommand ContinuarProcesoCommand
+        {
+            get
+            {
+                return _aceptarCommand ?? (_aceptarCommand = new MvxAsyncCommand(
+                    async () => await this.ExecuteAceptarCommand(),
+                    () => CanExecuteAceptarCommand()));
+            }
+        }
+
+        async Task ExecuteAceptarCommand()
+        {
+            try
+            {
+                //algo
+            }
+            catch (Exception ex)
+            {
+                //capturar Error
+            }
+        }
+                
+        bool CanExecuteAceptarCommand()
+        {
+			//Condiciones previas para habilitar el aceptar
+            return true;
+        }
+
+        #endregion
+		*/
 
 
     }

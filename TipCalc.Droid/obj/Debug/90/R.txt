@@ -11,9 +11,12 @@ int id Camera 0x7f040003
 int id MvvmCrossTagId 0x7f040000
 int id MvxBindingTagUnique 0x7f040001
 int id Task 0x7f040004
+int id linearLayout1 0x7f040005
 int layout ejemploview 0x7f030000
 int layout splashscreen 0x7f030001
-int string ApplicationName 0x7f050001
+int string Accept 0x7f050001
+int string ApplicationName 0x7f050003
+int string Finish 0x7f050002
 int string Hello 0x7f050000
 int style Theme_Splash 0x7f060000
 int[] styleable MvxBinding { 0x7f010000, 0x7f010001 }
