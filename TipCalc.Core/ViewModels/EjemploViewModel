@@ -1,0 +1,81 @@
+﻿using System.Threading.Tasks;
+using MvvmCross.ViewModels;
+
+namespace TipCalc.Core.ViewModels
+{
+    public class EjemploViewModel : MvxViewModel
+    {
+
+        public override async Task Initialize()
+        {
+            await base.Initialize();
+
+            IdPickingSheet = 27845; //Aqui habria alguna llamada externa para conseguir los valores
+            InitializeLabels();            
+        }
+
+        //Inicializamos los labels, en principio podria venir del json asociado, o del fichero Strings.xml
+        private void InitializeLabels()
+        {
+            PickingSheet = "Picking sheet: " + IdPickingSheet.ToString();
+            CustomerName = "Enrique Tomas S.L";
+            SalesOrder = IdPickingSheet.ToString();
+            Pallet = "EPALET STANDARD";
+        }
+
+        #region PickingSheet
+        private string _pickingSheet = string.Empty;
+        public string PickingSheet
+        {
+            get { return _pickingSheet; }
+            set { _pickingSheet = value; }
+        }
+
+        private int _idPickingSheet = 0;
+        public int IdPickingSheet
+        {
+            get { return _idPickingSheet; }
+            set { _idPickingSheet = value; }
+        }
+        #endregion
+
+        private string _customerName = string.Empty;
+        public string CustomerName
+        {
+            get { return _customerName; }
+            set { _customerName = value; }
+        }
+
+        private string _salesOrder = string.Empty;
+        public string SalesOrder
+        {
+            get { return _salesOrder; }
+            set { _salesOrder = value; }
+        }
+
+        private string _dn = string.Empty;
+
+        public string DN
+        {
+            get { return _dn; }
+            set
+            {
+                _dn = value;
+                IdPickingSheet = int.Parse(DN);
+                RaisePropertyChanged(() => IdPickingSheet);
+            }
+        }
+
+
+        private string _pallet = string.Empty;
+        public string Pallet
+        {
+            get { return _pallet; }
+            set {_pallet = value; }
+        }
+        
+
+
+
+    }
+}

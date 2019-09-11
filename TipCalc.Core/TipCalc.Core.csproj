@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+    </PropertyGroup>
+    <ItemGroup>
+      <None Remove="ViewModels\EjemploViewModel" />
+    </ItemGroup>
+    <ItemGroup>
+      <Compile Include="ViewModels\EjemploViewModel" />
+    </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="MvvmCross" Version="6.2.2" />
+    </ItemGroup>
+    <ItemGroup>
+      <Folder Include="Services\" />
+    </ItemGroup>
+</Project>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="TipCalc.Droid.TipCalc.Droid" android:versionCode="1" android:versionName="1.0">
+  <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="28" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <application android:label="TipCalc.Droid" android:name="md59e9f7473de37556e98d90f7f061d28a0.MainApplication" android:allowBackup="true" android:icon="@drawable/icon" android:debuggable="true">
+    <activity android:icon="@drawable/icon" android:noHistory="true" android:screenOrientation="portrait" android:theme="@style/Theme.Splash" android:name="md59e9f7473de37556e98d90f7f061d28a0.SplashScreen">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <activity android:label="Tip Calculator" android:name="md51e26027b3a35ed553ad87d568d38991a.EjemploView">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="1999999999" android:authorities="TipCalc.Droid.TipCalc.Droid.mono.MonoRuntimeProvider.__mono_init__" />
+    <!--suppress ExportedReceiver-->
+    <receiver android:name="mono.android.Seppuku">
+      <intent-filter>
+        <action android:name="mono.android.intent.action.SEPPUKU" />
+        <category android:name="mono.android.intent.category.SEPPUKU.TipCalc.Droid.TipCalc.Droid" />
+      </intent-filter>
+    </receiver>
+  </application>
+</manifest>

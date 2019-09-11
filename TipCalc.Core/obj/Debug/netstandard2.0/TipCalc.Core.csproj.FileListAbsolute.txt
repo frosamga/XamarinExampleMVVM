@@ -1,0 +1,8 @@
+C:\Users\frosa\Desktop\MvvmCross-Samples-master\MvvmCross-Samples-master\TipCalc\TipCalc.Core\bin\Debug\netstandard2.0\TipCalc.Core.deps.json
+C:\Users\frosa\Desktop\MvvmCross-Samples-master\MvvmCross-Samples-master\TipCalc\TipCalc.Core\bin\Debug\netstandard2.0\TipCalc.Core.dll
+C:\Users\frosa\Desktop\MvvmCross-Samples-master\MvvmCross-Samples-master\TipCalc\TipCalc.Core\bin\Debug\netstandard2.0\TipCalc.Core.pdb
+C:\Users\frosa\Desktop\MvvmCross-Samples-master\MvvmCross-Samples-master\TipCalc\TipCalc.Core\obj\Debug\netstandard2.0\TipCalc.Core.csproj.CoreCompileInputs.cache
+C:\Users\frosa\Desktop\MvvmCross-Samples-master\MvvmCross-Samples-master\TipCalc\TipCalc.Core\obj\Debug\netstandard2.0\TipCalc.Core.AssemblyInfoInputs.cache
+C:\Users\frosa\Desktop\MvvmCross-Samples-master\MvvmCross-Samples-master\TipCalc\TipCalc.Core\obj\Debug\netstandard2.0\TipCalc.Core.AssemblyInfo.cs
+C:\Users\frosa\Desktop\MvvmCross-Samples-master\MvvmCross-Samples-master\TipCalc\TipCalc.Core\obj\Debug\netstandard2.0\TipCalc.Core.dll
+C:\Users\frosa\Desktop\MvvmCross-Samples-master\MvvmCross-Samples-master\TipCalc\TipCalc.Core\obj\Debug\netstandard2.0\TipCalc.Core.pdb
